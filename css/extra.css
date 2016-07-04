@@ -1,0 +1,208 @@
+
+/*###########################*/
+/*           root            */
+/*###########################*/
+/*****************************/
+/* essential very important  */
+/*****************************/
+
+body , html {margin: 0;padding:0;}
+
+
+
+/*###########################*/
+/*       Bootstarap          */
+/*###########################*/
+
+.colapse {}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  /*background-color: transparent;*/
+  background-color: #000;/* add by h */
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #333;
+  border-color: #777;
+}
+
+.navbar-toggle:focus {
+  outline: 0;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background: #fff;/* add by h */
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+/*@media (min-width: 768px) {*/
+@media (min-width: 601px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+/*###########################*/
+/*       nav Top Menu        */
+/*###########################*/
+
+
+
+@media (min-width:600px){
+
+.nav-zxc {background:#000;}
+
+.nav-zxc a {padding:8% 15%;display: inline-block;color:#fff;background:#000;
+  white-space:nowrap;text-decoration:none;font-weight:bold;
+}
+
+.nav-zxc ul , .nav-zxc li {margin: 0;padding: 0;list-style: none;}
+
+.nav-zxc ul {box-shadow: 1px 1px 4px #000;}
+
+.nav-zxc  ul  > li > ul li a {border-radius:5%;border: 0.1vw solid #666;}
+
+.nav-zxc li  {position: relative;}
+
+.nav-zxc div > ul > li {display: inline-block;}
+
+.nav-zxc > div > ul  li  ul {position: absolute;display: none;}
+
+.nav-zxc li:hover > ul {display: inline-block;} 
+
+.nav-zxc > div > ul > li:hover > ul {left:0;top:100%;
+    animation-name: bounceInDown;
+    animation-duration: 0.3s;
+        -webkit-animation-name: bounceInDown;
+        -webkit-animation-duration: 0.3s;
+}
+
+.nav-zxc > div > ul > li > ul > li:hover > ul {left:100%; top:3%;}
+.nav-zxc > div > ul > li > ul > li > ul  li:hover > ul {left:120%; top:3%;} /* why 120% ????????????????????????????? */
+
+}
+/* End @media (min-width:600px) */
+
+
+@media (max-width:600px){
+
+.nav-zxc {display: inline-block;background:#ff0;/*display: none;*/}
+
+.nav-zxc a {padding:1%;display: inline-block;color:#fff;background:#000;
+  white-space:nowrap;text-decoration:none;font-weight:bold;
+}
+
+.nav-zxc li  {position: relative;} /* very important */
+.nav-zxc ul {display: inline-block;background: #fff}
+.nav-zxc li {display: block;background: #f0f}
+.nav-zxc ul , .nav-zxc li {margin: 0;padding: 0;list-style: none;}
+
+.nav-zxc ul {box-shadow: 1px 1px 4px #000;}
+
+.nav-zxc > div > ul  li  ul {position: relative;display: none;}
+
+/*.nav-zxc li:hover > ul {left:100%;top:0%;display: inline-block;}*/
+.nav-zxc > div > ul > li:hover > ul {left:100%;top:0%;display: inline-block;}
+
+.nav-zxc > div > ul > li > ul > li:hover > ul {left:0%;top:100%;display: inline-block;z-index: 1;}
+.nav-zxc > div > ul > li > ul > li > ul > li:hover > ul {display: inline-block;}
+
+}
+/* End @media (max 600px) */
+
+
+
+@media (min-width:600px){
+#search-3{float: right;border-radius: 2%;position: absolute;top:0.3%;right: 0;}
+#search-3 input:nth-child(2){border-radius: 10px 0 0 10px;border:1px solid #fff;box-shadow: inset 2px 2px 4px #000;}
+#search-3 input:last-child{border-radius: 0 10px 10px 0;border:0px solid #999;font-weight: bold;}
+#search-3 label{display: none;}
+}
+
+@media (min-width:200px) and (max-width:600px){
+#search-3 {float: right;margin-top: 0%;}
+#search-3 input{border-radius: 5px;}
+#search-3 label{display: none;}
+}
+
+
+/*###########################*/
+/*            Post           */
+/*###########################*/
+
+.post-title-zxc h1 a {color: #000;padding:0 1%;text-decoration: none;}
+.postedby {background: #000;padding:0 1%;margin: 1%;}
+.postedby p {display: inline-block;color: #fff;padding:0 1%;}
+.postedby span {display: inline-block;color:#fff;padding-left: 1%;}
+.postedby a {display: inline-block;color: #fff;text-decoration: none;}
+.post-categories , .post-categories li  {display: inline-block;background: #000;margin: 0; padding:0;}
+.post-categories a {padding-right: 10%;}
+.post-categories a:after {content: "  ,  ";}
+.avatar-zxc {padding:0 1%;}
+.post-zxc {margin: 0 1%;padding:0 1%;box-shadow:inset 2px 2px 4px ;border: 1px solid #fff;}
+.prevnext-zxc {display:block;color:#fff;margin: 1%;padding: 1%;background: #000;}
+.prevnext-zxc a {color:#fff;text-decoration: none;}
+
+.single-post-zxc {margin: 0 1%;padding:0 1%;box-shadow:inset 2px 2px 4px ;border: 1px solid #fff;}
+.single-post-zxc > h1 > a{color: #000;text-decoration: none;}
+ 
+
+/*###########################*/
+/*      Float Sidebar        */
+/*###########################*/
+
+.float-sidebar-zxc {
+  position: fixed;width:6%;top:20%;right:0%;bottom:77%;
+  color:#fff;background-color:#000;border: 1px solid #666;border-radius: 1%;
+  box-shadow: inset 0 0 5px #000000 , 0 9px 5px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+      -moz-box-shadow:    inset 0 0 10px #000000;
+}
+
+.float-sidebar-zxc ul , .float-sidebar-zxc li {list-style: none;display: none;}
+
+.float-sidebar-zxc h3 {padding: 0 5%;margin: 1%;}
+
+.float-sidebar-zxc:hover {width:25%;top:5%;bottom:5%;}
+
+.float-sidebar-zxc .widgettitle{display: none;text-shadow:1px 1px 1px #000;color:#fff;}
+
+.float-sidebar-zxc:hover li {display: inline-block;padding: 0 5%;border-bottom:2px solid #000;}
+
+.float-sidebar-zxc:hover a {color: #fff;text-decoration: none;}
+
+.float-sidebar-zxc:hover select option {color: #fff;}
+
+.float-sidebar-zxc:hover .widgettitle{display: inline-block;}
+
+
+/*###########################*/
+/*          Footer           */
+/*###########################*/
+
+.copyright-zxc {display:block;color:#fff;padding: 1%;background: #000;}
+.copyright-zxc a {color:#fff;text-decoration: none;}
